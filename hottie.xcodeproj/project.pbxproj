@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D9942B3A34ACB1A653850C6 /* Pods_hottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */; };
 		E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A6F20600C0000837DAC /* AppDelegate.swift */; };
-		E6246A7220600C0000837DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7120600C0000837DAC /* ViewController.swift */; };
+		E6246A7220600C0000837DAC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7120600C0000837DAC /* MapVC.swift */; };
 		E6246A7520600C0000837DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7320600C0000837DAC /* Main.storyboard */; };
 		E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7620600C0000837DAC /* hottie.xcdatamodeld */; };
 		E6246A7A20600C0000837DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7920600C0000837DAC /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.debug.xcconfig"; sourceTree = "<group>"; };
 		E6246A6C20600C0000837DAC /* hottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6246A6F20600C0000837DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6246A7120600C0000837DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6246A7120600C0000837DAC /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E6246A7420600C0000837DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6246A7720600C0000837DAC /* hottie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hottie.xcdatamodel; sourceTree = "<group>"; };
 		E6246A7920600C0000837DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 				E6246A85206010BA00837DAC /* View */,
 				E6246A84206010B300837DAC /* Controller */,
 				E6246A6F20600C0000837DAC /* AppDelegate.swift */,
-				E6246A7120600C0000837DAC /* ViewController.swift */,
+				E6246A7120600C0000837DAC /* MapVC.swift */,
 				E6246A7320600C0000837DAC /* Main.storyboard */,
 				E6246A7920600C0000837DAC /* Assets.xcassets */,
 				E6246A7B20600C0000837DAC /* LaunchScreen.storyboard */,
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
-				E6246A7220600C0000837DAC /* ViewController.swift in Sources */,
+				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +410,7 @@
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hottie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hospinn.hottie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hottie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,7 +426,7 @@
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hottie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hospinn.hottie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hottie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
