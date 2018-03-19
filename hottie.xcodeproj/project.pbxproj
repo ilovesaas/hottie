@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9942B3A34ACB1A653850C6 /* Pods_hottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */; };
 		E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A6F20600C0000837DAC /* AppDelegate.swift */; };
 		E6246A7220600C0000837DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7120600C0000837DAC /* ViewController.swift */; };
 		E6246A7520600C0000837DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7320600C0000837DAC /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.release.xcconfig"; sourceTree = "<group>"; };
+		C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.debug.xcconfig"; sourceTree = "<group>"; };
 		E6246A6C20600C0000837DAC /* hottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6246A6F20600C0000837DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6246A7120600C0000837DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9942B3A34ACB1A653850C6 /* Pods_hottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9EE489D0DB2ABDFA3E65029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6246A6320600C0000837DAC = {
 			isa = PBXGroup;
 			children = (
 				E6246A6E20600C0000837DAC /* hottie */,
 				E6246A6D20600C0000837DAC /* Products */,
+				EBBA2BFF33D2952B65B34072 /* Pods */,
+				B9EE489D0DB2ABDFA3E65029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,11 @@
 		E6246A6E20600C0000837DAC /* hottie */ = {
 			isa = PBXGroup;
 			children = (
+				E6246A88206010ED00837DAC /* Extensions */,
+				E6246A87206010CA00837DAC /* Utilities */,
+				E6246A86206010C200837DAC /* Model */,
+				E6246A85206010BA00837DAC /* View */,
+				E6246A84206010B300837DAC /* Controller */,
 				E6246A6F20600C0000837DAC /* AppDelegate.swift */,
 				E6246A7120600C0000837DAC /* ViewController.swift */,
 				E6246A7320600C0000837DAC /* Main.storyboard */,
@@ -67,6 +87,50 @@
 			path = hottie;
 			sourceTree = "<group>";
 		};
+		E6246A84206010B300837DAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6246A85206010BA00837DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6246A86206010C200837DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6246A87206010CA00837DAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E6246A88206010ED00837DAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EBBA2BFF33D2952B65B34072 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */,
+				9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6246A8120600C0000837DAC /* Build configuration list for PBXNativeTarget "hottie" */;
 			buildPhases = (
+				94275FDE5356578FCF05FB1B /* [CP] Check Pods Manifest.lock */,
 				E6246A6820600C0000837DAC /* Sources */,
 				E6246A6920600C0000837DAC /* Frameworks */,
 				E6246A6A20600C0000837DAC /* Resources */,
+				1645EAD8CC41DC5CB001F415 /* [CP] Embed Pods Frameworks */,
+				A8F6E114D631162F5FC00927 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +200,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1645EAD8CC41DC5CB001F415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hottie/Pods-hottie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hottie/Pods-hottie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94275FDE5356578FCF05FB1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hottie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8F6E114D631162F5FC00927 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hottie/Pods-hottie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6246A6820600C0000837DAC /* Sources */ = {
@@ -276,6 +403,7 @@
 		};
 		E6246A8220600C0000837DAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +419,7 @@
 		};
 		E6246A8320600C0000837DAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
