@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MapKit
+import Alamofire
 
-class MapVC: UIViewController {
+class MapVC: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
