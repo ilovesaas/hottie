@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
@@ -18,21 +23,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFI-aT-A8R">
-                                <rect key="frame" x="85" y="361" width="49" height="31"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SB-I7-YRM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-qh-lfE">
+                                <rect key="frame" x="293" y="592" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="T7B-xp-rhR"/>
+                                    <constraint firstAttribute="height" constant="70" id="xxd-oI-ohs"/>
+                                </constraints>
+                                <state key="normal" image="Profile"/>
+                                <connections>
+                                    <action selector="profileView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJy-yn-4PK"/>
+                                    <segue destination="E7v-9y-HYh" kind="show" identifier="profileView" id="BYw-oO-vFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vh-YFz">
+                                <rect key="frame" x="24" y="617" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="luF-s5-1Xd">
-                                <rect key="frame" x="96" y="170" width="118" height="30"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOK-z9-Dz1">
+                                <rect key="frame" x="142" y="582" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="QrK-Tt-7ri"/>
+                                    <constraint firstAttribute="height" constant="90" id="lrT-NC-jqE"/>
+                                </constraints>
+                                <state key="normal" image="Aperture 3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zY-81-P0d">
+                                <rect key="frame" x="309" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xgx-ht-uBB"/>
+                                    <constraint firstAttribute="width" constant="50" id="s2w-g6-pOA"/>
+                                </constraints>
+                                <state key="normal" image="Search 8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-8c-qlJ">
+                                <rect key="frame" x="165" y="18" width="46" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <state key="normal" title="EHL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="J6H-Pa-q79"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ib-qh-lfE" secondAttribute="bottom" constant="5" id="M45-T0-GpJ"/>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TIo-j8-InX"/>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TMY-uP-rzj"/>
+                            <constraint firstItem="2zY-81-P0d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tgj-ja-01x"/>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="df9-j7-cv6"/>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gid-ul-kvo"/>
+                            <constraint firstItem="3SB-I7-YRM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ppO-sx-BcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ib-qh-lfE" secondAttribute="trailing" constant="12" id="qmh-JF-iVJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zY-81-P0d" secondAttribute="trailing" constant="16" id="ufg-9e-3dk"/>
+                            <constraint firstAttribute="bottom" secondItem="pOK-z9-Dz1" secondAttribute="bottom" constant="-7" id="xxT-PY-riy"/>
+                            <constraint firstItem="pOK-z9-Dz1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3Z-tr-sXN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="communityMap" destination="3SB-I7-YRM" id="4VX-kS-9sE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MNo-x4-C5A">
+            <objects>
+                <viewController id="E7v-9y-HYh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LA-aB-ure">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BEJ-sY-q4G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrc-ve-jga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Aperture 3" width="83" height="83"/>
+        <image name="Profile" width="60" height="60"/>
+        <image name="Search 8" width="57" height="57"/>
+    </resources>
 </document>

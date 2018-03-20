@@ -77,7 +77,6 @@
 				E6246A85206010BA00837DAC /* View */,
 				E6246A84206010B300837DAC /* Controller */,
 				E6246A6F20600C0000837DAC /* AppDelegate.swift */,
-				E6246A7120600C0000837DAC /* MapVC.swift */,
 				E6246A7320600C0000837DAC /* Main.storyboard */,
 				E6246A7920600C0000837DAC /* Assets.xcassets */,
 				E6246A7B20600C0000837DAC /* LaunchScreen.storyboard */,
@@ -90,6 +89,7 @@
 		E6246A84206010B300837DAC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E6246A7120600C0000837DAC /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +167,11 @@
 					E6246A6B20600C0000837DAC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
