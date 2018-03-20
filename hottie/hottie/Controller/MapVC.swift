@@ -30,6 +30,12 @@ class MapVC: UIViewController {
     @IBAction func profileView(_ sender: Any) {
     }
     
+    @IBAction func communityView(_ sender: Any) {
+    }
+    
+    @IBAction func cameraBtnWasPressed(_ sender: Any) {
+    }
+    
 }
 
 extension MapVC: MKMapViewDelegate {

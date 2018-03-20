@@ -14,6 +14,8 @@
 		E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7620600C0000837DAC /* hottie.xcdatamodeld */; };
 		E6246A7A20600C0000837DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7920600C0000837DAC /* Assets.xcassets */; };
 		E6246A7D20600C0000837DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7B20600C0000837DAC /* LaunchScreen.storyboard */; };
+		E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FF820616B6400480D3B /* CommunityVC.swift */; };
+		E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FFA20616C5700480D3B /* CameraVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E6246A7920600C0000837DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6246A7C20600C0000837DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6246A7E20600C0000837DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64B6FF820616B6400480D3B /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
+		E64B6FFA20616C5700480D3B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				E6246A7120600C0000837DAC /* MapVC.swift */,
+				E64B6FF820616B6400480D3B /* CommunityVC.swift */,
+				E64B6FFA20616C5700480D3B /* CameraVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			files = (
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
+				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
+				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
