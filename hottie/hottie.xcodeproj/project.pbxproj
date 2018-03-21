@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D9942B3A34ACB1A653850C6 /* Pods_hottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */; };
+		BF30CCC220626FC7002168A3 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30CCC120626FC7002168A3 /* RoundedShadow.swift */; };
+		BFD21D61206277DB0001EA32 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */; };
+		BFD21D63206278590001EA32 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */; };
+		BFD21D6720628BC80001EA32 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */; };
 		E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A6F20600C0000837DAC /* AppDelegate.swift */; };
 		E6246A7220600C0000837DAC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7120600C0000837DAC /* MapVC.swift */; };
 		E6246A7520600C0000837DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7320600C0000837DAC /* Main.storyboard */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.release.xcconfig"; sourceTree = "<group>"; };
+		BF30CCC120626FC7002168A3 /* RoundedShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadow.swift; path = hottie/Controller/RoundedShadow.swift; sourceTree = SOURCE_ROOT; };
+		BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowButton.swift; path = hottie/Controller/RoundedShadowButton.swift; sourceTree = SOURCE_ROOT; };
+		BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowImageView.swift; path = hottie/Controller/RoundedShadowImageView.swift; sourceTree = SOURCE_ROOT; };
+		BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.debug.xcconfig"; sourceTree = "<group>"; };
 		E6246A6C20600C0000837DAC /* hottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6246A6F20600C0000837DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BFD21D6520628B880001EA32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E6246A6320600C0000837DAC = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +95,7 @@
 		E6246A6E20600C0000837DAC /* hottie */ = {
 			isa = PBXGroup;
 			children = (
+				BFD21D6520628B880001EA32 /* Resources */,
 				E6246A88206010ED00837DAC /* Extensions */,
 				E6246A87206010CA00837DAC /* Utilities */,
 				E6246A86206010C200837DAC /* Model */,
@@ -109,6 +126,9 @@
 		E6246A85206010BA00837DAC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF30CCC120626FC7002168A3 /* RoundedShadow.swift */,
+				BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */,
+				BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,10 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD21D61206277DB0001EA32 /* RoundedShadowButton.swift in Sources */,
+				BFD21D6720628BC80001EA32 /* SqueezeNet.mlmodel in Sources */,
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
 				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
+
 				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
