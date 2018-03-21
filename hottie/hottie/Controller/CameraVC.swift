@@ -11,6 +11,12 @@ import AVFoundation
 
 class CameraVC: UIImagePickerController {
 
+    @IBOutlet var CameraView: UIView!
+    @IBOutlet var CaptureImageView: UIImageView!
+    @IBOutlet var FlashBtn: UIButton!
+    @IBOutlet var IdentificationLbl: UILabel!
+    @IBOutlet var ConfidenceLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
