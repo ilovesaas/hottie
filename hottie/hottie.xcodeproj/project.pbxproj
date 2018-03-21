@@ -19,6 +19,8 @@
 		E6246A7D20600C0000837DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7B20600C0000837DAC /* LaunchScreen.storyboard */; };
 		E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FF820616B6400480D3B /* CommunityVC.swift */; };
 		E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FFA20616C5700480D3B /* CameraVC.swift */; };
+		E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7936E206274440030FDE2 /* LoginVC.swift */; };
+		E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E6246A7E20600C0000837DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64B6FF820616B6400480D3B /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		E64B6FFA20616C5700480D3B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		E6F7936E206274440030FDE2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E6246A7120600C0000837DAC /* MapVC.swift */,
 				E64B6FF820616B6400480D3B /* CommunityVC.swift */,
 				E64B6FFA20616C5700480D3B /* CameraVC.swift */,
+				E6F7936E206274440030FDE2 /* LoginVC.swift */,
+				E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,9 +295,10 @@
 				BFD21D61206277DB0001EA32 /* RoundedShadowButton.swift in Sources */,
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
+				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
-				BFD21D63206278590001EA32 /* RoundedShadowImageView.swift in Sources */,
-				BF30CCC220626FC7002168A3 /* RoundedShadow.swift in Sources */,
+
+				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
 			);
