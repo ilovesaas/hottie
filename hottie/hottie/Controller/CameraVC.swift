@@ -21,11 +21,12 @@ class CameraVC: UIImagePickerController {
     
 
     @IBOutlet var CameraView: UIView!
-    @IBOutlet var CaptureImageView: RoundedShadowImageView!
+  
+
     @IBOutlet var FlashBtn: RoundedShadowButton!
     @IBOutlet var IdentificationLbl: UILabel!
     @IBOutlet var ConfidenceLbl: UILabel!
-    @IBOutlet var RoundedLblView: RoundedShadow!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
