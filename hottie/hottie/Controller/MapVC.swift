@@ -34,6 +34,7 @@ class MapVC: UIViewController {
     }
     
     @IBAction func cameraBtnWasPressed(_ sender: Any) {
+        performSegue(withIdentifier: "segueToCamera", sender: self)
     }
     
 }

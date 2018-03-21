@@ -210,17 +210,6 @@
                                     <segue destination="E7v-9y-HYh" kind="show" identifier="profileView" id="BYw-oO-vFe"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vh-YFz">
-                                <rect key="frame" x="12" y="592" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="586-Ka-BEG"/>
-                                    <constraint firstAttribute="height" constant="70" id="Es6-Cu-Ci0"/>
-                                </constraints>
-                                <state key="normal" image="Community 4"/>
-                            </button>
-=======
->>>>>>> b6bc44e42f76e68963baf9a80f570ef52e3331f0
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCn-YG-MKv">
                                 <rect key="frame" x="167" y="17" width="40" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
@@ -239,13 +228,8 @@
                                 </constraints>
                                 <state key="normal" image="Search 8"/>
                             </button>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOK-z9-Dz1">
                                 <rect key="frame" x="142" y="572" width="90" height="90"/>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOK-z9-Dz1">
-                                <rect key="frame" x="142" y="577" width="90" height="90"/>
->>>>>>> b6bc44e42f76e68963baf9a80f570ef52e3331f0
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="QrK-Tt-7ri"/>
                                     <constraint firstAttribute="height" constant="90" id="lrT-NC-jqE"/>
@@ -253,7 +237,7 @@
                                 <state key="normal" image="Aperture 3"/>
                                 <connections>
                                     <action selector="cameraBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYD-NQ-7Fh"/>
-                                    <segue destination="P3s-w3-A8m" kind="show" identifier="cameraBtnWasPressed" id="b7m-I0-1hg"/>
+                                    <segue destination="P3s-w3-A8m" kind="show" identifier="segueToCamera" id="b7m-I0-1hg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vh-YFz">

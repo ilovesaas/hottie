@@ -122,7 +122,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
             }
             
             let image = UIImage(data: photoData!)
-            self.CaptureImageView.image = image
+
         }
     }
 }
