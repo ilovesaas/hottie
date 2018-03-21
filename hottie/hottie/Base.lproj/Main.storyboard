@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-Cd-YZe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-Cd-YZe">
                                 <rect key="frame" x="128" y="140" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -61,7 +61,7 @@
                                     <segue destination="E7v-9y-HYh" kind="show" identifier="profileView" id="BYw-oO-vFe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vh-YFz">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vh-YFz">
                                 <rect key="frame" x="24" y="617" width="46" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="586-Ka-BEG"/>
@@ -69,19 +69,7 @@
                                 </constraints>
                                 <state key="normal" image="Community 4"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOK-z9-Dz1">
-                                <rect key="frame" x="142" y="582" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="QrK-Tt-7ri"/>
-                                    <constraint firstAttribute="height" constant="90" id="lrT-NC-jqE"/>
-                                </constraints>
-                                <state key="normal" image="Aperture 3"/>
-                                <connections>
-                                    <action selector="cameraBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYD-NQ-7Fh"/>
-                                    <segue destination="P3s-w3-A8m" kind="show" identifier="cameraBtnWasPressed" id="b7m-I0-1hg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCn-YG-MKv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCn-YG-MKv">
                                 <rect key="frame" x="171" y="17" width="32" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="EHL">
@@ -98,6 +86,18 @@
                                     <constraint firstAttribute="height" constant="40" id="vMR-yG-J8P"/>
                                 </constraints>
                                 <state key="normal" image="Search 8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOK-z9-Dz1">
+                                <rect key="frame" x="142" y="557" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="QrK-Tt-7ri"/>
+                                    <constraint firstAttribute="height" constant="90" id="lrT-NC-jqE"/>
+                                </constraints>
+                                <state key="normal" image="Aperture 3"/>
+                                <connections>
+                                    <action selector="cameraBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYD-NQ-7Fh"/>
+                                    <segue destination="P3s-w3-A8m" kind="show" identifier="cameraBtnWasPressed" id="b7m-I0-1hg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
