@@ -142,23 +142,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZC-L9-opv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMW-uY-3v2">
-                                        <rect key="frame" x="20" y="611" width="100" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="m4r-Ry-qEq"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <state key="normal" title="FLASH OFF"/>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MtV-GU-JvE">
-                                        <rect key="frame" x="262" y="484" width="93" height="163"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="163" id="sNY-P2-WNd"/>
-                                            <constraint firstAttribute="width" constant="93" id="tpS-cc-zf5"/>
-                                        </constraints>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dW2-KK-AcK">
-                                        <rect key="frame" x="20" y="28" width="335" height="71"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dW2-KK-AcK" customClass="RoundedShadow" customModule="hottie" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="30" width="335" height="71"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gph-RT-5Xp">
                                                 <rect key="frame" x="33" y="8" width="273" height="20.5"/>
@@ -204,16 +189,35 @@
                                             <constraint firstAttribute="height" constant="71" id="XOa-il-XPI"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MtV-GU-JvE" customClass="RoundedShadowImageView" customModule="hottie" customModuleProvider="target">
+                                        <rect key="frame" x="262" y="484" width="93" height="163"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="T5L-6E-Gst"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="163" id="qE5-f0-nZ1"/>
+                                            <constraint firstAttribute="height" constant="163" id="sNY-P2-WNd"/>
+                                            <constraint firstAttribute="width" constant="93" id="tpS-cc-zf5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMW-uY-3v2" customClass="RoundedShadowButton" customModule="hottie" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="611" width="108" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="le2-dg-FZl"/>
+                                            <constraint firstAttribute="width" constant="85" id="m4r-Ry-qEq"/>
+                                            <constraint firstAttribute="height" constant="36" id="pU3-9Y-0Or"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="FLASH OFF"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="dW2-KK-AcK" secondAttribute="trailing" constant="20" id="5bd-Wt-1wh"/>
-                                    <constraint firstItem="PMW-uY-3v2" firstAttribute="leading" secondItem="6ZC-L9-opv" secondAttribute="leading" constant="20" id="D5r-Lh-JM5"/>
-                                    <constraint firstAttribute="trailing" secondItem="MtV-GU-JvE" secondAttribute="trailing" constant="20" id="Rbf-Fy-xXw"/>
-                                    <constraint firstItem="dW2-KK-AcK" firstAttribute="leading" secondItem="6ZC-L9-opv" secondAttribute="leading" constant="20" id="Roh-xL-qCP"/>
-                                    <constraint firstAttribute="bottom" secondItem="PMW-uY-3v2" secondAttribute="bottom" constant="20" id="TyR-9o-6hN"/>
-                                    <constraint firstAttribute="bottom" secondItem="MtV-GU-JvE" secondAttribute="bottom" constant="20" id="VXG-B6-fxs"/>
-                                    <constraint firstItem="dW2-KK-AcK" firstAttribute="top" secondItem="6ZC-L9-opv" secondAttribute="top" constant="30" id="cZZ-GM-gxh"/>
+                                    <constraint firstAttribute="bottom" secondItem="PMW-uY-3v2" secondAttribute="bottom" constant="20" id="8U5-LN-woe"/>
+                                    <constraint firstAttribute="bottom" secondItem="MtV-GU-JvE" secondAttribute="bottom" constant="20" id="AfO-Wq-IVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dW2-KK-AcK" secondAttribute="trailing" constant="20" id="KcJ-M1-lDK"/>
+                                    <constraint firstItem="PMW-uY-3v2" firstAttribute="leading" secondItem="6ZC-L9-opv" secondAttribute="leading" constant="20" id="bFJ-OS-nhM"/>
+                                    <constraint firstItem="dW2-KK-AcK" firstAttribute="top" secondItem="6ZC-L9-opv" secondAttribute="top" constant="30" id="buY-CW-nwe"/>
+                                    <constraint firstAttribute="trailing" secondItem="MtV-GU-JvE" secondAttribute="trailing" constant="20" id="gTl-l0-lVq"/>
+                                    <constraint firstItem="dW2-KK-AcK" firstAttribute="leading" secondItem="6ZC-L9-opv" secondAttribute="leading" constant="20" id="psk-32-x4k"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -232,6 +236,7 @@
                         <outlet property="ConfidenceLbl" destination="Wca-8X-0CL" id="Fsr-QL-2mc"/>
                         <outlet property="FlashBtn" destination="PMW-uY-3v2" id="YDP-B6-DZg"/>
                         <outlet property="IdentificationLbl" destination="qJP-VX-ai6" id="8RA-TW-mtp"/>
+                        <outlet property="RoundedLblView" destination="dW2-KK-AcK" id="1BI-uJ-6Ut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muo-Ev-bBl" userLabel="First Responder" sceneMemberID="firstResponder"/>

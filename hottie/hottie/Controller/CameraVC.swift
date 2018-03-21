@@ -10,12 +10,20 @@ import UIKit
 import AVFoundation
 
 class CameraVC: UIImagePickerController {
+    
+    var captureSessions: AVCaptureSession!
+    var cameraOutput: AVCapturePhotoOutput!
+    var previewLayer: AVCaptureVideoPreviewLayer!
+    
+    var photoData: Data?
+    
 
     @IBOutlet var CameraView: UIView!
-    @IBOutlet var CaptureImageView: UIImageView!
-    @IBOutlet var FlashBtn: UIButton!
+    @IBOutlet var CaptureImageView: RoundedShadowImageView!
+    @IBOutlet var FlashBtn: RoundedShadowButton!
     @IBOutlet var IdentificationLbl: UILabel!
     @IBOutlet var ConfidenceLbl: UILabel!
+    @IBOutlet var RoundedLblView: RoundedShadow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +31,74 @@ class CameraVC: UIImagePickerController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        previewLayer.frame = CameraView.bounds
+    
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapCameraView))
+        tap.numberOfTapsRequired = 1
+        
+        captureSessions = AVCaptureSession()
+        captureSessions.sessionPreset = AVCaptureSession.Preset.hd1920x1080
+        
+        let backCamera = AVCaptureDevice.default(for: AVMediaType.video)
+        
+        do {
+            let input = try AVCaptureDeviceInput(device: backCamera!)
+            if captureSessions.canAddInput(input) == true {
+                captureSessions.addInput(input)
+                
+            }
+            cameraOutput = AVCapturePhotoOutput()
+            
+            if captureSessions.canAddOutput(cameraOutput) == true {
+                captureSessions.addOutput(cameraOutput!)
+                
+                previewLayer = AVCaptureVideoPreviewLayer(session: captureSessions!)
+                previewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+                previewLayer.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
+                
+                CameraView.layer.addSublayer(previewLayer!)
+                CameraView.addGestureRecognizer(tap)
+                captureSessions.startRunning()
+            }
+        } catch {
+            debugPrint(error)
+            
+        }
+        
+    }
+    
+    @objc func didTapCameraView() {
+        let settings = AVCapturePhotoSettings()
+        
+        settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
+        
+        cameraOutput.capturePhoto(with: settings, delegate: self)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+}
+
+extension CameraVC: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        if let error = error {
+            debugPrint(error)
+        } else {
+            photoData = photo.fileDataRepresentation()
+            
+            let image = UIImage(data: photoData!)
+            self.CaptureImageView.image = image
+        }
     }
-    */
-
 }
