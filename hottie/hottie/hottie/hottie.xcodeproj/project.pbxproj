@@ -97,6 +97,9 @@
 		B9EE489D0DB2ABDFA3E65029 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFD21D7D2063EC8E0001EA32 /* Bolts.framework */,
+				BFD21D7C2063EC8E0001EA32 /* Parse.framework */,
+				8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */,
 				BFD21D7A2063EBFF0001EA32 /* SystemConfiguration.framework */,
 				BFD21D782063EBF10001EA32 /* StoreKit.framework */,
 				BFD21D762063EBE20001EA32 /* Security.framework */,
@@ -107,7 +110,6 @@
 				BFD21D6C2063EBA10001EA32 /* AudioToolbox.framework */,
 				BFD21D6A2063EB930001EA32 /* libz.tbd */,
 				BFD21D682063EB830001EA32 /* libsqlite3.tbd */,
-				8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,8 +125,6 @@
 		E6246A6320600C0000837DAC = {
 			isa = PBXGroup;
 			children = (
-				BFD21D7D2063EC8E0001EA32 /* Bolts.framework */,
-				BFD21D7C2063EC8E0001EA32 /* Parse.framework */,
 				E6246A6E20600C0000837DAC /* hottie */,
 				E6246A6D20600C0000837DAC /* Products */,
 				EBBA2BFF33D2952B65B34072 /* Pods */,
