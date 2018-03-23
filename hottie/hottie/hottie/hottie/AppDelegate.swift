@@ -21,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let parseConfig = ParseClientConfiguration { (ParseMutableClientConfiguration)in
         // accessing Heroku App via Id & keys
-        ParseMutableClientConfiguration.applicationId = "thenextbigthing"
-        ParseMutableClientConfiguration.clientKey = "thenextbigthing"
-        ParseMutableClientConfiguration.server = "http://hospinn.herokuapp.com/parse"
+        ParseMutableClientConfiguration.applicationId = "hotspothottiehospinnhustle123987546"
+        ParseMutableClientConfiguration.clientKey = "hotspothottiehospinnhustle123987546"
+        ParseMutableClientConfiguration.server = "http://hottie-hotspot.herokuapp.com/parse"
         
     }
         Parse.initialize(with: parseConfig)

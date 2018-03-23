@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Parse
 
 class MapVC: UIViewController {
 
@@ -25,7 +26,7 @@ class MapVC: UIViewController {
         locationManager.delegate = self
         communityMap.showsUserLocation = true
         configureLocationServices()
-    }
+}
 
     @IBAction func profileView(_ sender: Any) {
     }

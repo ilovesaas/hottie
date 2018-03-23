@@ -28,6 +28,7 @@
 		E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7620600C0000837DAC /* hottie.xcdatamodeld */; };
 		E6246A7A20600C0000837DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7920600C0000837DAC /* Assets.xcassets */; };
 		E6246A7D20600C0000837DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7B20600C0000837DAC /* LaunchScreen.storyboard */; };
+		E63935F9206481BA000C9504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63935F8206481BA000C9504 /* Constants.swift */; };
 		E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FF820616B6400480D3B /* CommunityVC.swift */; };
 		E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FFA20616C5700480D3B /* CameraVC.swift */; };
 		E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7936E206274440030FDE2 /* LoginVC.swift */; };
@@ -62,6 +63,7 @@
 		E6246A7920600C0000837DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6246A7C20600C0000837DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6246A7E20600C0000837DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63935F8206481BA000C9504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E64B6FF820616B6400480D3B /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		E64B6FFA20616C5700480D3B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		E6F7936E206274440030FDE2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -141,10 +143,9 @@
 		E6246A6E20600C0000837DAC /* hottie */ = {
 			isa = PBXGroup;
 			children = (
+				E63935F620648191000C9504 /* Utilities */,
 				BFD21D6520628B880001EA32 /* Resources */,
-				E6246A88206010ED00837DAC /* Extensions */,
-				E6246A87206010CA00837DAC /* Utilities */,
-				E6246A86206010C200837DAC /* Model */,
+				E63935F72064819C000C9504 /* Model */,
 				E6246A85206010BA00837DAC /* View */,
 				E6246A84206010B300837DAC /* Controller */,
 				E6246A6F20600C0000837DAC /* AppDelegate.swift */,
@@ -179,25 +180,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E6246A86206010C200837DAC /* Model */ = {
+		E63935F620648191000C9504 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E6246A87206010CA00837DAC /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
+				E63935F8206481BA000C9504 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E6246A88206010ED00837DAC /* Extensions */ = {
+		E63935F72064819C000C9504 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Extensions;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EBBA2BFF33D2952B65B34072 /* Pods */ = {
@@ -354,6 +349,7 @@
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
 				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
+				E63935F9206481BA000C9504 /* Constants.swift in Sources */,
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
 				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
@@ -496,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -516,7 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
