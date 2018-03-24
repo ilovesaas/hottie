@@ -31,16 +31,19 @@
 		E63935F9206481BA000C9504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63935F8206481BA000C9504 /* Constants.swift */; };
 		E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FF820616B6400480D3B /* CommunityVC.swift */; };
 		E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FFA20616C5700480D3B /* CameraVC.swift */; };
+		E6E14CC02065C4A200CD47F7 /* CreateAccount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */; };
 		E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7936E206274440030FDE2 /* LoginVC.swift */; };
 		E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */; };
+		E6FCB37620669F9600FF1F10 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB37520669F9600FF1F10 /* InsetTextField.swift */; };
+		E6FCB37B2066AB9500FF1F10 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB37A2066AB9500FF1F10 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.release.xcconfig"; sourceTree = "<group>"; };
-		BF30CCC120626FC7002168A3 /* RoundedShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadow.swift; path = hottie/Controller/RoundedShadow.swift; sourceTree = SOURCE_ROOT; };
-		BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowButton.swift; path = hottie/Controller/RoundedShadowButton.swift; sourceTree = SOURCE_ROOT; };
-		BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowImageView.swift; path = hottie/Controller/RoundedShadowImageView.swift; sourceTree = SOURCE_ROOT; };
+		BF30CCC120626FC7002168A3 /* RoundedShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadow.swift; path = hottie/Views/RoundedShadow.swift; sourceTree = SOURCE_ROOT; };
+		BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowButton.swift; path = hottie/Views/RoundedShadowButton.swift; sourceTree = SOURCE_ROOT; };
+		BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowImageView.swift; path = hottie/Views/RoundedShadowImageView.swift; sourceTree = SOURCE_ROOT; };
 		BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		BFD21D682063EB830001EA32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BFD21D6A2063EB930001EA32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -66,8 +69,11 @@
 		E63935F8206481BA000C9504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E64B6FF820616B6400480D3B /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		E64B6FFA20616C5700480D3B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount2VC.swift; sourceTree = "<group>"; };
 		E6F7936E206274440030FDE2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		E6FCB37520669F9600FF1F10 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsetTextField.swift; path = hottie/Views/InsetTextField.swift; sourceTree = SOURCE_ROOT; };
+		E6FCB37A2066AB9500FF1F10 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +151,8 @@
 			children = (
 				E63935F620648191000C9504 /* Utilities */,
 				BFD21D6520628B880001EA32 /* Resources */,
-				E63935F72064819C000C9504 /* Model */,
-				E6246A85206010BA00837DAC /* View */,
+				E6FCB37C2066CBAA00FF1F10 /* Model */,
+				E6FCB3772066AB1100FF1F10 /* Views */,
 				E6246A84206010B300837DAC /* Controller */,
 				E6246A6F20600C0000837DAC /* AppDelegate.swift */,
 				E6246A7320600C0000837DAC /* Main.storyboard */,
@@ -166,18 +172,9 @@
 				E64B6FFA20616C5700480D3B /* CameraVC.swift */,
 				E6F7936E206274440030FDE2 /* LoginVC.swift */,
 				E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */,
+				E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E6246A85206010BA00837DAC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				BF30CCC120626FC7002168A3 /* RoundedShadow.swift */,
-				BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */,
-				BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E63935F620648191000C9504 /* Utilities */ = {
@@ -188,7 +185,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E63935F72064819C000C9504 /* Model */ = {
+		E6FCB3772066AB1100FF1F10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF30CCC120626FC7002168A3 /* RoundedShadow.swift */,
+				BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */,
+				BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */,
+				E6FCB37520669F9600FF1F10 /* InsetTextField.swift */,
+				E6FCB37A2066AB9500FF1F10 /* KeyboardBoundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6FCB37C2066CBAA00FF1F10 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -348,12 +357,15 @@
 				BFD21D6720628BC80001EA32 /* SqueezeNet.mlmodel in Sources */,
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
+				E6FCB37B2066AB9500FF1F10 /* KeyboardBoundView.swift in Sources */,
 				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
 				E63935F9206481BA000C9504 /* Constants.swift in Sources */,
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
+				E6E14CC02065C4A200CD47F7 /* CreateAccount2VC.swift in Sources */,
 				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
+				E6FCB37620669F9600FF1F10 /* InsetTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

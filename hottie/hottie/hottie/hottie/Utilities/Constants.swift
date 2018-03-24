@@ -10,4 +10,6 @@ import Foundation
 
 // Segues
 
+let VIEW_LOGIN = "viewLogin"
 let TO_LOGIN = "toLogin"
+let TO_NEXT_PAGE = "toNextPage"
