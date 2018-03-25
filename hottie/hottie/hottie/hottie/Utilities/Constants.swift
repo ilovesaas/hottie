@@ -13,3 +13,4 @@ import Foundation
 let VIEW_LOGIN = "viewLogin"
 let TO_LOGIN = "toLogin"
 let TO_MY_MAP = "toMyMap"
+let TO_CAMERA = "segueToCamera"

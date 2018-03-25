@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
         
-        //login()
+        login()
         
         Parse.initialize(with: parseConfig)
         return true
