@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ParseMutableClientConfiguration.server = "http://hottie-hotspot.herokuapp.com/parse"
         
     }
+        
+        //login()
+        
         Parse.initialize(with: parseConfig)
         return true
     }
@@ -96,6 +99,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    func login() {
+        
+        //remember user's login
+        
+        let username: String? = UserDefaults().string(forKey: "username")
+        
+        if username != nil {
+            
+            //direct to MapVC
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let myMap = storyboard.instantiateViewController(withIdentifier: "MapVC") 
+            window?.rootViewController = myMap
+            
         }
     }
 

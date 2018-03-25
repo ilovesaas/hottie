@@ -42,7 +42,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func registerupBtnPressed(_sender: Any) {
-        performSegue(withIdentifier: TO_NEXT_PAGE, sender: nil)
+        performSegue(withIdentifier: TO_MY_MAP, sender: nil)
         //dismiss keyboard
         self.view.endEditing(true)
         
@@ -73,6 +73,15 @@ class CreateAccountVC: UIViewController {
         user.signUpInBackground { (success:Bool, error:Error?) in
             if success {
                 print("Registered")
+                
+                //remember logged user
+                UserDefaults().set(user.username, forKey: "username")
+                UserDefaults().synchronize()
+                
+                // call login fucntion
+                let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.login()
+        
             } else {
                 print("Error")
             }

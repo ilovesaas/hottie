@@ -31,7 +31,6 @@
 		E63935F9206481BA000C9504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63935F8206481BA000C9504 /* Constants.swift */; };
 		E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FF820616B6400480D3B /* CommunityVC.swift */; };
 		E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B6FFA20616C5700480D3B /* CameraVC.swift */; };
-		E6E14CC02065C4A200CD47F7 /* CreateAccount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */; };
 		E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7936E206274440030FDE2 /* LoginVC.swift */; };
 		E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */; };
 		E6FCB37620669F9600FF1F10 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB37520669F9600FF1F10 /* InsetTextField.swift */; };
@@ -69,7 +68,6 @@
 		E63935F8206481BA000C9504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E64B6FF820616B6400480D3B /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		E64B6FFA20616C5700480D3B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
-		E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount2VC.swift; sourceTree = "<group>"; };
 		E6F7936E206274440030FDE2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		E6FCB37520669F9600FF1F10 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsetTextField.swift; path = hottie/Views/InsetTextField.swift; sourceTree = SOURCE_ROOT; };
@@ -172,7 +170,6 @@
 				E64B6FFA20616C5700480D3B /* CameraVC.swift */,
 				E6F7936E206274440030FDE2 /* LoginVC.swift */,
 				E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */,
-				E6E14CBF2065C4A200CD47F7 /* CreateAccount2VC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
 				E63935F9206481BA000C9504 /* Constants.swift in Sources */,
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
-				E6E14CC02065C4A200CD47F7 /* CreateAccount2VC.swift in Sources */,
 				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
