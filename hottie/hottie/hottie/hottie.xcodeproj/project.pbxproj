@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D9942B3A34ACB1A653850C6 /* Pods_hottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */; };
+		BFC857C420683642009920DD /* pictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857C320683642009920DD /* pictureCell.swift */; };
 		BFD21D61206277DB0001EA32 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */; };
 		BFD21D6720628BC80001EA32 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */; };
 		BFD21D692063EB830001EA32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD21D682063EB830001EA32 /* libsqlite3.tbd */; };
@@ -22,6 +23,9 @@
 		BFD21D7B2063EBFF0001EA32 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD21D7A2063EBFF0001EA32 /* SystemConfiguration.framework */; };
 		BFD21D7E2063EC8F0001EA32 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD21D7C2063EC8E0001EA32 /* Parse.framework */; };
 		BFD21D7F2063EC8F0001EA32 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD21D7D2063EC8E0001EA32 /* Bolts.framework */; };
+		BFF68A36206819430048C79F /* noun_229846_cc-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF68A35206819430048C79F /* noun_229846_cc-2.png */; };
+		BFF68A3820682E870048C79F /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF68A3720682E870048C79F /* profileVC.swift */; };
+		BFF68A3C206831320048C79F /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF68A3B206831320048C79F /* headerView.swift */; };
 		E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A6F20600C0000837DAC /* AppDelegate.swift */; };
 		E6246A7220600C0000837DAC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6246A7120600C0000837DAC /* MapVC.swift */; };
 		E6246A7520600C0000837DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6246A7320600C0000837DAC /* Main.storyboard */; };
@@ -41,6 +45,7 @@
 		8EEA66C9AC4A59F66C81C51D /* Pods_hottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B15FB2962B07885B29F5F /* Pods-hottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.release.xcconfig"; sourceTree = "<group>"; };
 		BF30CCC120626FC7002168A3 /* RoundedShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadow.swift; path = hottie/Views/RoundedShadow.swift; sourceTree = SOURCE_ROOT; };
+		BFC857C320683642009920DD /* pictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureCell.swift; sourceTree = "<group>"; };
 		BFD21D60206277DB0001EA32 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowButton.swift; path = hottie/Views/RoundedShadowButton.swift; sourceTree = SOURCE_ROOT; };
 		BFD21D62206278590001EA32 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedShadowImageView.swift; path = hottie/Views/RoundedShadowImageView.swift; sourceTree = SOURCE_ROOT; };
 		BFD21D6620628BC80001EA32 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		BFD21D7A2063EBFF0001EA32 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BFD21D7C2063EC8E0001EA32 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BFD21D7D2063EC8E0001EA32 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BFF68A35206819430048C79F /* noun_229846_cc-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noun_229846_cc-2.png"; sourceTree = "<group>"; };
+		BFF68A3720682E870048C79F /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
+		BFF68A3B206831320048C79F /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		C792E0BA6DCC0A32F771C33F /* Pods-hottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hottie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hottie/Pods-hottie.debug.xcconfig"; sourceTree = "<group>"; };
 		E6246A6C20600C0000837DAC /* hottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6246A6F20600C0000837DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 		E6246A6320600C0000837DAC = {
 			isa = PBXGroup;
 			children = (
+				BFC857C320683642009920DD /* pictureCell.swift */,
 				E6246A6E20600C0000837DAC /* hottie */,
 				E6246A6D20600C0000837DAC /* Products */,
 				EBBA2BFF33D2952B65B34072 /* Pods */,
@@ -147,6 +156,7 @@
 		E6246A6E20600C0000837DAC /* hottie */ = {
 			isa = PBXGroup;
 			children = (
+				BFF68A35206819430048C79F /* noun_229846_cc-2.png */,
 				E63935F620648191000C9504 /* Utilities */,
 				BFD21D6520628B880001EA32 /* Resources */,
 				E6FCB37C2066CBAA00FF1F10 /* Model */,
@@ -170,6 +180,8 @@
 				E64B6FFA20616C5700480D3B /* CameraVC.swift */,
 				E6F7936E206274440030FDE2 /* LoginVC.swift */,
 				E6F79370206274EF0030FDE2 /* CreateAccountVC.swift */,
+				BFF68A3720682E870048C79F /* profileVC.swift */,
+				BFF68A3B206831320048C79F /* headerView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6246A7D20600C0000837DAC /* LaunchScreen.storyboard in Resources */,
+				BFF68A36206819430048C79F /* noun_229846_cc-2.png in Resources */,
 				E6246A7A20600C0000837DAC /* Assets.xcassets in Resources */,
 				E6246A7520600C0000837DAC /* Main.storyboard in Resources */,
 			);
@@ -353,6 +366,7 @@
 				BFD21D61206277DB0001EA32 /* RoundedShadowButton.swift in Sources */,
 				BFD21D6720628BC80001EA32 /* SqueezeNet.mlmodel in Sources */,
 				E6246A7820600C0000837DAC /* hottie.xcdatamodeld in Sources */,
+				BFF68A3C206831320048C79F /* headerView.swift in Sources */,
 				E6246A7220600C0000837DAC /* MapVC.swift in Sources */,
 				E6FCB37B2066AB9500FF1F10 /* KeyboardBoundView.swift in Sources */,
 				E6F7936F206274440030FDE2 /* LoginVC.swift in Sources */,
@@ -360,6 +374,8 @@
 				E64B6FFB20616C5700480D3B /* CameraVC.swift in Sources */,
 				E6F79371206274EF0030FDE2 /* CreateAccountVC.swift in Sources */,
 				E64B6FF920616B6400480D3B /* CommunityVC.swift in Sources */,
+				BFF68A3820682E870048C79F /* profileVC.swift in Sources */,
+				BFC857C420683642009920DD /* pictureCell.swift in Sources */,
 				E6246A7020600C0000837DAC /* AppDelegate.swift in Sources */,
 				E6FCB37620669F9600FF1F10 /* InsetTextField.swift in Sources */,
 			);
