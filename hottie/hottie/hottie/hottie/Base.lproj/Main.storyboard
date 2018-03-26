@@ -837,7 +837,7 @@
         <!--ProfileVC-->
         <scene sceneID="PWh-9g-LR8">
             <objects>
-                <collectionViewController id="Q4U-d2-UjP" customClass="ProfileVC" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="ProfileVC" id="Q4U-d2-UjP" customClass="ProfileVC" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QT1-Qh-oEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -867,7 +867,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="B5M-xc-4rw" customClass="headerView">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="B5M-xc-4rw" userLabel="Collection Reusable View" customClass="headerView">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -921,12 +921,13 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_229846_cc-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-EM-WJJ">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avaImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-EM-WJJ">
                                     <rect key="frame" x="22" y="7" width="79" height="76"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                             </subviews>
                             <connections>
+                                <outlet property="avaImg" destination="YMa-EM-WJJ" id="16p-bf-jnp"/>
                                 <outlet property="button" destination="TiF-Yt-OhI" id="fZ4-Se-0I0"/>
                                 <outlet property="followers" destination="Gaq-Q1-zKD" id="IRq-S2-dhK"/>
                                 <outlet property="followersTitle" destination="ojm-ee-MuB" id="Z0b-Ch-TUe"/>
@@ -966,7 +967,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHH-35-Qcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="197"/>
+            <point key="canvasLocation" x="1582" y="-53"/>
         </scene>
     </scenes>
     <resources>
@@ -976,8 +977,8 @@
         <image name="Profile" width="60" height="60"/>
         <image name="Search 8" width="57" height="57"/>
         <image name="aperturedope" width="700" height="700"/>
+        <image name="avaImg.png" width="700" height="700"/>
         <image name="noun_1349196_cc" width="700" height="700"/>
-        <image name="noun_229846_cc-2.png" width="700" height="700"/>
         <image name="noun_843100_cc" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>

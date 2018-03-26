@@ -10,6 +10,7 @@ import UIKit
 
 class headerView: UICollectionReusableView {
     
+    @IBOutlet weak var avaImg: UIImageView!
     
     @IBOutlet weak var fullName: UILabel!
     
